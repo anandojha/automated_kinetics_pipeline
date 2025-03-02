@@ -101,25 +101,25 @@ cd ~
 #### 9. Install the Espaloma Force Field
 Espaloma is a machine-learned molecular mechanics force field designed to improve the accuracy and flexibility of molecular simulations. To install Espaloma, we need to install its dependencies, including OpenFF Toolkit, OpenMM Force Fields, and OpenEye Toolkits.
 
-#### a. Install the OpenFF Toolkit
+##### a. Install the OpenFF Toolkit
 The Open Force Field (OpenFF) Toolkit is required to assign and manipulate molecular mechanics parameters. 
 ```sh
 conda install conda-forge::openff-toolkit --yes
 ```
-#### b. Install OpenMM Force Fields
+##### b. Install OpenMM Force Fields
 OpenMM Force Fields provide additional parameter sets for molecular simulations using OpenMM.
 
 ```sh
 conda install conda-forge::openmmforcefields --yes
 ```
-#### c. Install OpenEye Toolkits
+##### c. Install OpenEye Toolkits
 The OpenEye Toolkits are used for quantum chemistry-based force field parameterization. This requires an OpenEye license, but it is free for academic users.
 
 ```sh
 conda install openeye::openeye-toolkits --yes
 ```
 
-#### d. Install espaloma mchine-learned force field
+##### d. Install espaloma mchine-learned force field
 Install espaloma version 0.3.2, which includes the latest parameterization models.
 
 ```sh
