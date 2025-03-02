@@ -53,7 +53,7 @@ cd ~
 ```sh
 git clone https://github.com/seekrcentral/seekr2.git
 ```
-##### c. Navigate into the seekr2 directory where the cloned repository is located
+##### c. Navigate into the seekr2 directory, where the cloned repository is located
 ```sh
 cd seekr2
 ```
@@ -98,35 +98,56 @@ pytest
 cd ~
 ```
 
-#### 9. Install espaloma=0.3.2 force field pre-trained model
-Espaloma is a machine-learned molecular mechanics force field designed to improve the accuracy and flexibility of molecular simulations. To install Espaloma, we need to install its dependencies, including OpenFF Toolkit, OpenMM Force Fields, and OpenEye toolkits.
-
-##### a. Install the OpenFF toolkit
+#### 9. Install the OpenFF toolkit
 The Open Force Field (OpenFF) Toolkit is required to assign and manipulate molecular mechanics parameters. 
+
 ```sh
 conda install conda-forge::openff-toolkit --yes
 ```
-##### b. Install OpenMM forcefields
+
+#### 10. Install the OpenFF toolkit
+The OpenEye Toolkits are used for quantum chemistry-based force field parameterization. The OpenEye toolkits require a valid OpenEye academic license, free for academic users but must be obtained directly from https://www.eyesopen.com/academic-licensing.
+
+##### a. Install OpenEye Toolkits
+Run the following command to install OpenEye toolkits via conda:
+
+```sh
+conda install openeye::openeye-toolkits --yes
+```
+##### b.  Obtain and place the license file
+After obtaining an OpenEye academic license, save the provided oe_license.txt file in a secure location on your system.
+For example, you may place it in:
+```sh
+/home/USERNAME/licenses/oe_license.txt
+```
+##### c.  Add the license to your environment
+To ensure that OpenEye toolkits can find the license file at runtime, export the license path by adding the following line to your ~/.bashrc. 
+
+```sh
+export OE_LICENSE="/home/USERNAME/licenses/oe_license.txt"
+```
+##### d.  Source ~/.bashrc
+To apply this change immediately in the current terminal session, run:
+
+```sh
+source ~/.bashrc
+```
+
+#### 11. Install OpenMM forcefields
 OpenMM Force Fields provide additional parameter sets for molecular simulations using OpenMM.
 
 ```sh
 conda install conda-forge::openmmforcefields --yes
 ```
-##### c. Install OpenEye toolkits
-The OpenEye Toolkits are used for quantum chemistry-based force field parameterization. This requires an OpenEye license, but it is free for academic users.
 
-```sh
-conda install openeye::openeye-toolkits --yes
-```
-
-##### d. Install espaloma machine-learned force field
+#### 12. Install espaloma machine-learned force field
 Install espaloma version 0.3.2, which includes the latest parameterization models.
 
 ```sh
 conda install conda-forge::"espaloma=0.3.2" --yes
 ```
 
-#### 10. Install BrownDye2
+#### 13. Install BrownDye2
 BrownDye2 is a package used for Brownian dynamics (BD) simulations, which are needed to compute association rate constants. If you plan to run BD simulations, follow these installation steps. Some of these steps require sudo privileges (administrator access). If you do not have sudo access, contact your system administrator.
 
 ##### a. Before proceeding, go to the home directory
