@@ -6,12 +6,12 @@ This repository provides an **end-to-end automated pipeline** for running **mile
 
 To install and set up the necessary environment, run the following commands in sequence.
 
-#### Create a new Conda environment named 'one_step_kinetics' with Python 3.10
+#### 1. Create a new Conda environment named 'one_step_kinetics' with Python 3.10
 The --yes flag ensures it installs without prompting for confirmation.
 ```sh
 conda create -n one_step_kinetics python=3.10 --yes
 ```
-#### Activate the Conda Environment
+#### 2. Activate the Conda Environment
 Once the environment is created, activate the conda environment, switching the current shell session to use the new environment.
 ```sh
 conda activate one_step_kinetics
