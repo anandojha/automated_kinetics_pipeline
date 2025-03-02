@@ -6,39 +6,31 @@ This repository provides an **end-to-end automated pipeline** for running **mile
 
 To install and set up the necessary environment, run the following commands in sequence.
 
-#### 1. Create a new Conda environment named 'one_step_kinetics' with Python 3.10
+#### 1. Create a new conda environment named 'one_step_kinetics' with Python 3.10
 The --yes flag ensures it installs without prompting for confirmation.
 ```sh
 conda create -n one_step_kinetics python=3.10 --yes
 ```
-#### 2. Activate the Conda Environment
+
+#### 2. Activate the conda environment
 Once the environment is created, activate the conda environment, switching the current shell session to use the new environment.
 ```sh
 conda activate one_step_kinetics
 ```
 
-# Install Mamba for faster dependency resolution
+#### 3. Install mamba for faster dependency resolution
+Mamba is a faster drop-in replacement for conda that speeds up package installations.
+```sh
 conda install conda-forge::mamba --yes
+```
 
-# Install OpenMM and SEEKR2 Plugin
+#### 4. Before proceeding, go to the home directory (recommended)
+```sh
+cd ~
+```
+
+#### 5. Install SEEKR2 plugin
+This step installs OpenMM plugin for SEEKR2 package.
+```sh
 mamba install seekr2_openmm_plugin openmm=8.1 --yes
-
-# Verify SEEKR2 OpenMM Plugin Installation
-python -c "import seekr2plugin"
-
-# Install Git (if not installed)
-conda install conda-forge::git --yes
-
-# Clone and install SEEKR2
-git clone https://github.com/seekrcentral/seekr2.git
-cd seekr2
-python -m pip install .
-pytest   # Run tests to verify installation
-cd ..
-
-# Clone and install SEEKRTools
-git clone https://github.com/seekrcentral/seekrtools.git
-cd seekrtools
-python -m pip install .
-pytest  # Run tests to verify installation
-cd ..
+```
