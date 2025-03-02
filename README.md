@@ -105,10 +105,10 @@ The Open Force Field (OpenFF) Toolkit is required to assign and manipulate molec
 conda install conda-forge::openff-toolkit --yes
 ```
 
-#### 10. Install the OpenFF toolkit
+#### 10. Install OpenEye toolkits
 The OpenEye Toolkits are used for quantum chemistry-based force field parameterization. The OpenEye toolkits require a valid OpenEye academic license, free for academic users but must be obtained directly from https://www.eyesopen.com/academic-licensing.
 
-##### a. Install OpenEye Toolkits
+##### a. Install OpenEye toolkits
 Run the following command to install OpenEye toolkits via conda:
 
 ```sh
