@@ -10,6 +10,7 @@ To install and set up the necessary environment, run the following commands in s
 # Create and activate Conda environment
 conda create -n one_step_kinetics python=3.10 --yes
 conda activate one_step_kinetics
+```
 
 # Install Mamba for faster dependency resolution
 conda install conda-forge::mamba --yes
