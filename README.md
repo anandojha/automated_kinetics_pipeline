@@ -42,22 +42,36 @@ Git is required to clone repositories. Ensure it is installed using:
 conda install conda-forge::git --yes
 ```
 
-#### 7. Before proceeding, go to the home directory (recommended).
+#### 7. Install the SEEKR2 package.
+SEEKR2 is the core package required for performing milestoning simulations. We will download it from GitHub, install it, and verify that it works correctly.
+
+
+##### a. CBefore proceeding, go to the home directory (recommended).
 ```sh
 cd ~
 ```
-
-#### 8. Now, clone the SEEKR2 repository, install it, and run tests to verify the installation.
-
+##### b. Clone the SEEKR2 repository from GitHub into the current directory.
 ```sh
 git clone https://github.com/seekrcentral/seekr2.git
+```
+##### c. Navigate into the seekr2 directory where the cloned repository is located.
+```sh
 cd seekr2
+```
+##### d. Install SEEKR2 using pip, making it accessible as a Python package in the conda environment.
+```sh
 python -m pip install .
-pytest 
+```
+##### e. Run tests to verify that SEEKR2 has been installed correctly and is functioning as expected.
+```sh
+pytest
+```
+##### f. Return to the home directory (~), ensuring a clean workspace before proceeding to the next steps.
+```sh
 cd ~
 ```
 
-#### 9. 
+#### 8. 
 
 
 ```sh
