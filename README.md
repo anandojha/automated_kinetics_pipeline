@@ -1,17 +1,3 @@
-## Automated Simulation Pipeline for Kinetic and Thermodynamic Predictions
-
-This repository provides an **end-to-end automated pipeline** for running **milestoning simulations** with machine-learned force fields to accelerate **drug-target kinetic and thermodynamic predictions**. The pipeline utilizes **SEEKR2**, **SEEKRTools**, and **espaloma=0.3.2** to automate simulations.
-
-### **Getting Started**
-
-To install and set up the necessary environment, run the following commands in sequence.
-
-#### 1. Create a new conda environment named 'one_step_kinetics' with Python 3.10
-The --yes flag ensures it installs without prompting for confirmation.
-```sh
-conda create -n one_step_kinetics python=3.10 --yes
-```
-
 #### 2. Activate the conda environment
 Once the environment is created, activate the conda environment, switching the current shell session to use the new environment.
 ```sh
@@ -45,8 +31,7 @@ conda install conda-forge::git --yes
 #### 7. Install the SEEKR2 package.
 SEEKR2 is the core package required for performing milestoning simulations. We will download it from GitHub, install it, and verify that it works correctly.
 
-
-##### a. CBefore proceeding, go to the home directory (recommended).
+##### a. Before proceeding, go to the home directory (recommended).
 ```sh
 cd ~
 ```
@@ -71,32 +56,30 @@ pytest
 cd ~
 ```
 
-#### 8. 
+#### 8. Install the SEEKRTools package.
+SEEKRTools is a companion package to SEEKR2 that provides utilities for preparing and facilitating multiscale milestoning simulations.
 
-
+##### a. Before proceeding, go to the home directory (recommended).
 ```sh
-
+cd ~
 ```
-
-#### 10. 
-
-
+##### b. Clone the SEEKRTools repository from GitHub into the current directory.
 ```sh
-
+git clone https://github.com/seekrcentral/seekrtools.git
 ```
-
-#### 11. 
-
-
+##### c. Navigate into the seekrtools directory where the cloned repository is located.
 ```sh
-
+cd seekrtools
 ```
-
-#### 12. 
-
-
+##### d. Install SEEKRTools using pip, making it accessible as a Python package in the conda environment.
 ```sh
-
+python -m pip install .
 ```
-
-
+##### e. Run tests to verify that SEEKRTools has been installed correctly and is functioning as expected.
+```sh
+pytest
+```
+##### f. Return to the home directory (~), ensuring a clean workspace before proceeding to the next steps.
+```sh
+cd ~
+```
