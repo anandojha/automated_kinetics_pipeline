@@ -1,8 +1,8 @@
-# Automated Simulation Pipeline for Kinetic and Thermodynamic Predictions
+## Automated Simulation Pipeline for Kinetic and Thermodynamic Predictions
 
 This repository provides an **end-to-end automated pipeline** for running **milestoning simulations** with machine-learned force fields to accelerate **drug-target kinetic and thermodynamic predictions**. The pipeline utilizes **SEEKR2**, **SEEKRTools**, and **espaloma=0.3.2** to automate simulations.
 
-## **Getting Started**
+### **Getting Started**
 
 To install and set up the necessary environment, run the following commands in sequence.
 
@@ -24,13 +24,65 @@ Mamba is a faster drop-in replacement for conda that speeds up package installat
 conda install conda-forge::mamba --yes
 ```
 
-#### 4. Before proceeding, go to the home directory (recommended)
-```sh
-cd ~
-```
-
-#### 5. Install SEEKR2 plugin
+#### 4. Install SEEKR2 plugin
 This step installs OpenMM plugin for SEEKR2 package.
 ```sh
 mamba install seekr2_openmm_plugin openmm=8.1 --yes
 ```
+#### 5. Verify SEEKR2 OpenMM Plugin Installation
+Run the following command to check if the SEEKR2 OpenMM plugin is correctly installed. If no error message appears, the installation was successful.
+```sh
+python -c "import seekr2plugin"
+```
+
+#### 6. Install Git
+Git is required to clone repositories. Ensure it is installed using:
+
+```sh
+conda install conda-forge::git --yes
+```
+
+#### 7. Before proceeding, go to the home directory (recommended).
+```sh
+cd ~
+```
+
+#### 8. Now, clone the SEEKR2 repository, install it, and run tests to verify the installation.
+
+```sh
+git clone https://github.com/seekrcentral/seekr2.git
+cd seekr2
+python -m pip install .
+pytest 
+cd ~
+```
+
+#### 9. 
+
+
+```sh
+
+```
+
+#### 10. 
+
+
+```sh
+
+```
+
+#### 11. 
+
+
+```sh
+
+```
+
+#### 12. 
+
+
+```sh
+
+```
+
+
