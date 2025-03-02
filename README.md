@@ -126,3 +126,51 @@ Install espaloma version 0.3.2, which includes the latest parameterization model
 conda install conda-forge::"espaloma=0.3.2" --yes
 ```
 
+#### 10. Install BrownDye2
+BrownDye2 is a package used for Brownian dynamics (BD) simulations, which are needed to compute association rate constants. If you plan to run BD simulations, follow these installation steps. Some of these steps require sudo privileges (administrator access). If you do not have sudo access, contact your system administrator.
+
+##### a. Before proceeding, go to the home directory (recommended).
+```sh
+cd ~
+```
+##### b. Install required dependencies
+BrownDye2 requires several system libraries for compilation. Install them using:
+
+```sh
+sudo apt-get install libexpat1 make apbs liblapack-dev
+```
+
+```sh
+sudo apt-get install ocaml ocaml-native-compilers
+```
+
+```sh
+sudo apt-get install libexpat1-dev
+```
+
+##### c. Download the latest BrownDye2 source code
+```sh
+wget https://browndye.ucsd.edu/downloads/browndye2.tar.gz
+```
+##### d. Extract the downloaded archive.
+```sh
+tar xvfz browndye2.tar.gz
+```
+##### e. Navigate into the browndye2 directory 
+```sh
+cd browndye2
+```
+##### f. Compile the software
+```sh
+make -j 4 all
+```
+
+##### g. Return to the home directory 
+```sh
+cd ~
+```
+
+##### g. Clean up unnecessary files
+```sh
+rm -rf browndye2.tar.gz
+```
