@@ -29,7 +29,7 @@ This step installs OpenMM plugin for SEEKR2 package.
 ```sh
 mamba install seekr2_openmm_plugin openmm=8.1 --yes
 ```
-#### 5. Verify SEEKR2 OpenMM Plugin Installation
+#### 5. Verify SEEKR2 OpenMM plugin installation
 Run the following command to check if the SEEKR2 OpenMM plugin is correctly installed. If no error message appears, the installation was successful.
 ```sh
 python -c "import seekr2plugin"
@@ -42,30 +42,30 @@ Git is required to clone repositories. Ensure it is installed using:
 conda install conda-forge::git --yes
 ```
 
-#### 7. Install the SEEKR2 package.
+#### 7. Install the SEEKR2 package
 SEEKR2 is the core package required for performing milestoning simulations. We will download it from GitHub, install it, and verify that it works correctly.
 
-##### a. Before proceeding, go to the home directory (recommended).
+##### a. Before proceeding, go to the home directory
 ```sh
 cd ~
 ```
-##### b. Clone the SEEKR2 repository from GitHub into the current directory.
+##### b. Clone the SEEKR2 repository from GitHub into the current directory
 ```sh
 git clone https://github.com/seekrcentral/seekr2.git
 ```
-##### c. Navigate into the seekr2 directory where the cloned repository is located.
+##### c. Navigate into the seekr2 directory where the cloned repository is located
 ```sh
 cd seekr2
 ```
-##### d. Install SEEKR2 using pip, making it accessible as a Python package in the conda environment.
+##### d. Install SEEKR2 using pip, making it accessible as a Python package in the conda environment
 ```sh
 python -m pip install .
 ```
-##### e. Run tests to verify that SEEKR2 has been installed correctly and is functioning as expected.
+##### e. Run tests to verify that SEEKR2 has been installed correctly and is functioning as expected
 ```sh
 pytest
 ```
-##### f. Return to the home directory (~), ensuring a clean workspace before proceeding to the next steps.
+##### f. Return to the home directory (~), ensuring a clean workspace before proceeding to the next steps
 ```sh
 cd ~
 ```
@@ -73,53 +73,53 @@ cd ~
 #### 8. Install the SEEKRTools package
 SEEKRTools is a companion package to SEEKR2 that provides utilities for preparing and facilitating multiscale milestoning simulations.
 
-##### a. Before proceeding, go to the home directory (recommended).
+##### a. Before proceeding, go to the home directory
 ```sh
 cd ~
 ```
-##### b. Clone the SEEKRTools repository from GitHub into the current directory.
+##### b. Clone the SEEKRTools repository from GitHub into the current directory
 ```sh
 git clone https://github.com/seekrcentral/seekrtools.git
 ```
-##### c. Navigate into the seekrtools directory where the cloned repository is located.
+##### c. Navigate into the seekrtools directory where the cloned repository is located
 ```sh
 cd seekrtools
 ```
-##### d. Install SEEKRTools using pip, making it accessible as a Python package in the conda environment.
+##### d. Install SEEKRTools using pip, making it accessible as a Python package in the conda environment
 ```sh
 python -m pip install .
 ```
-##### e. Run tests to verify that SEEKRTools has been installed correctly and is functioning as expected.
+##### e. Run tests to verify that SEEKRTools has been installed correctly and is functioning as expected
 ```sh
 pytest
 ```
-##### f. Return to the home directory (~), ensuring a clean workspace before proceeding to the next steps.
+##### f. Return to the home directory (~), ensuring a clean workspace before proceeding to the next steps
 ```sh
 cd ~
 ```
 
-#### 9. Install the Espaloma Force Field
-Espaloma is a machine-learned molecular mechanics force field designed to improve the accuracy and flexibility of molecular simulations. To install Espaloma, we need to install its dependencies, including OpenFF Toolkit, OpenMM Force Fields, and OpenEye Toolkits.
+#### 9. Install espaloma=0.3.2 force field pre-trained model
+Espaloma is a machine-learned molecular mechanics force field designed to improve the accuracy and flexibility of molecular simulations. To install Espaloma, we need to install its dependencies, including OpenFF Toolkit, OpenMM Force Fields, and OpenEye toolkits.
 
-##### a. Install the OpenFF Toolkit
+##### a. Install the OpenFF toolkit
 The Open Force Field (OpenFF) Toolkit is required to assign and manipulate molecular mechanics parameters. 
 ```sh
 conda install conda-forge::openff-toolkit --yes
 ```
-##### b. Install OpenMM Force Fields
+##### b. Install OpenMM forcefields
 OpenMM Force Fields provide additional parameter sets for molecular simulations using OpenMM.
 
 ```sh
 conda install conda-forge::openmmforcefields --yes
 ```
-##### c. Install OpenEye Toolkits
+##### c. Install OpenEye toolkits
 The OpenEye Toolkits are used for quantum chemistry-based force field parameterization. This requires an OpenEye license, but it is free for academic users.
 
 ```sh
 conda install openeye::openeye-toolkits --yes
 ```
 
-##### d. Install espaloma mchine-learned force field
+##### d. Install espaloma machine-learned force field
 Install espaloma version 0.3.2, which includes the latest parameterization models.
 
 ```sh
@@ -129,7 +129,7 @@ conda install conda-forge::"espaloma=0.3.2" --yes
 #### 10. Install BrownDye2
 BrownDye2 is a package used for Brownian dynamics (BD) simulations, which are needed to compute association rate constants. If you plan to run BD simulations, follow these installation steps. Some of these steps require sudo privileges (administrator access). If you do not have sudo access, contact your system administrator.
 
-##### a. Before proceeding, go to the home directory (recommended).
+##### a. Before proceeding, go to the home directory
 ```sh
 cd ~
 ```
@@ -152,7 +152,7 @@ sudo apt-get install libexpat1-dev
 ```sh
 wget https://browndye.ucsd.edu/downloads/browndye2.tar.gz
 ```
-##### d. Extract the downloaded archive.
+##### d. Extract the downloaded archive
 ```sh
 tar xvfz browndye2.tar.gz
 ```
