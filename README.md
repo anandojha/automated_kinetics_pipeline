@@ -45,27 +45,27 @@ conda install conda-forge::git --yes
 #### 7. Install the SEEKR2 package
 SEEKR2 is the core package required for performing milestoning simulations. We will download it from GitHub, install it, and verify that it works correctly.
 
-##### a. Before proceeding, go to the home directory
+##### Before proceeding, go to the home directory
 ```sh
 cd ~
 ```
-##### b. Clone the SEEKR2 repository from GitHub into the current directory
+##### Clone the SEEKR2 repository from GitHub into the current directory
 ```sh
 git clone https://github.com/seekrcentral/seekr2.git
 ```
-##### c. Navigate into the seekr2 directory, where the cloned repository is located
+##### Navigate into the seekr2 directory, where the cloned repository is located
 ```sh
 cd seekr2
 ```
-##### d. Install SEEKR2 using pip, making it accessible as a Python package in the conda environment
+##### Install SEEKR2 using pip, making it accessible as a Python package in the conda environment
 ```sh
 python -m pip install .
 ```
-##### e. Run tests to verify that SEEKR2 has been installed correctly and is functioning as expected
+##### Run tests to verify that SEEKR2 has been installed correctly and is functioning as expected
 ```sh
 pytest
 ```
-##### f. Return to the home directory (~), ensuring a clean workspace before proceeding to the next steps
+##### Return to the home directory (~), ensuring a clean workspace before proceeding to the next steps
 ```sh
 cd ~
 ```
@@ -73,27 +73,27 @@ cd ~
 #### 8. Install the SEEKRTools package
 SEEKRTools is a companion package to SEEKR2 that provides utilities for preparing and facilitating multiscale milestoning simulations.
 
-##### a. Before proceeding, go to the home directory
+##### Before proceeding, go to the home directory
 ```sh
 cd ~
 ```
-##### b. Clone the SEEKRTools repository from GitHub into the current directory
+##### Clone the SEEKRTools repository from GitHub into the current directory
 ```sh
 git clone https://github.com/seekrcentral/seekrtools.git
 ```
-##### c. Navigate into the seekrtools directory where the cloned repository is located
+##### Navigate into the seekrtools directory where the cloned repository is located
 ```sh
 cd seekrtools
 ```
-##### d. Install SEEKRTools using pip, making it accessible as a Python package in the conda environment
+##### Install SEEKRTools using pip, making it accessible as a Python package in the conda environment
 ```sh
 python -m pip install .
 ```
-##### e. Run tests to verify that SEEKRTools has been installed correctly and is functioning as expected
+##### Run tests to verify that SEEKRTools has been installed correctly and is functioning as expected
 ```sh
 pytest
 ```
-##### f. Return to the home directory (~), ensuring a clean workspace before proceeding to the next steps
+##### Return to the home directory (~), ensuring a clean workspace before proceeding to the next steps
 ```sh
 cd ~
 ```
@@ -108,25 +108,25 @@ conda install conda-forge::openff-toolkit --yes
 #### 10. Install OpenEye toolkits
 The OpenEye Toolkits are used for quantum chemistry-based force field parameterization. The OpenEye toolkits require a valid OpenEye academic license, free for academic users but must be obtained directly from https://www.eyesopen.com/academic-licensing.
 
-##### a. Install OpenEye toolkits
+##### Install OpenEye toolkits
 Run the following command to install OpenEye toolkits via conda:
 
 ```sh
 conda install openeye::openeye-toolkits --yes
 ```
-##### b.  Obtain and place the license file
+##### Obtain and place the license file
 After obtaining an OpenEye academic license, save the provided oe_license.txt file in a secure location on your system.
 For example, you may place it in:
 ```sh
 /home/USERNAME/licenses/oe_license.txt
 ```
-##### c.  Add the license to your environment
+##### Add the license to your environment
 To ensure that OpenEye toolkits can find the license file at runtime, export the license path by adding the following line to your ~/.bashrc. 
 
 ```sh
 export OE_LICENSE="/home/USERNAME/licenses/oe_license.txt"
 ```
-##### d.  Source ~/.bashrc
+##### Source ~/.bashrc
 To apply this change immediately in the current terminal session, run:
 
 ```sh
@@ -150,11 +150,11 @@ conda install conda-forge::"espaloma=0.3.2" --yes
 #### 13. Install BrownDye2
 BrownDye2 is a package used for Brownian dynamics (BD) simulations, which are needed to compute association rate constants. If you plan to run BD simulations, follow these installation steps. Some of these steps require sudo privileges (administrator access). If you do not have sudo access, contact your system administrator.
 
-##### a. Before proceeding, go to the home directory
+##### Before proceeding, go to the home directory
 ```sh
 cd ~
 ```
-##### b. Install required dependencies
+##### Install required dependencies
 BrownDye2 requires several system libraries for compilation. Install them using:
 
 ```sh
@@ -169,29 +169,29 @@ sudo apt-get install ocaml ocaml-native-compilers
 sudo apt-get install libexpat1-dev
 ```
 
-##### c. Download the latest BrownDye2 source code
+##### Download the latest BrownDye2 source code
 ```sh
 wget https://browndye.ucsd.edu/downloads/browndye2.tar.gz
 ```
-##### d. Extract the downloaded archive
+##### Extract the downloaded archive
 ```sh
 tar xvfz browndye2.tar.gz
 ```
-##### e. Navigate into the browndye2 directory 
+##### Navigate into the browndye2 directory 
 ```sh
 cd browndye2
 ```
-##### f. Compile the software
+##### Compile the software
 ```sh
 make -j 4 all
 ```
 
-##### g. Return to the home directory 
+##### Return to the home directory 
 ```sh
 cd ~
 ```
 
-##### g. Clean up unnecessary files
+##### Clean up unnecessary files
 ```sh
 rm -rf browndye2.tar.gz
 ```
