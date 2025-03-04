@@ -2,7 +2,7 @@
 
 # Define SEEKR2 and SEEKRTools paths
 SEEKR2_PATH="/mnt/home/aojha/seekr2"
-SEEKRTOOLS_PATH="mnt/home/aojha/seekrtools"
+SEEKRTOOLS_PATH="/mnt/home/aojha/seekrtools"
 
 # Stop execution if any command fails
 set -e
