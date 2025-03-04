@@ -7,6 +7,44 @@ The following series of scripts automates the process of running milestoning sim
  - run_analysis.py (for SEEKR2 path)
 
 
+#### 1. get_protein_ligand.py
+This script extracts the protein and ligand from a given PDB file containing a receptor-ligand complex. It separates the ligand based on a specified residue name and outputs two new PDB files: protein.pdb for the protein and ligand.pdb for the ligand. It also converts the ligand structure into SDF format (ligand.sdf) to prepare it for force field parameterization.
+
+#### 2. parameterize.py
+This script applies force field parameters to the protein and ligand employing ESPALOMA (for the solute) and AMBER force fields (for the solvent). It creates a solvated and minimized structure that is ready for simulations. The system is prepared with the correct force field assignments, and necessary OpenMM-compatible system files are generated. These files are required for running molecular dynamics simulations. 
+
+#### 3. create_milestoning_input.py
+This script determines the milestones (boundaries) for the SEEKR2 simulation by analyzing the center-of-mass (COM) distances between the protein and ligand. It processes the minimized PDB file, identifies key atoms, and generates the required model.xml file, which contains information about the reaction coordinates and milestones for the milestoning simulations.
+
+#### 4. prepare_milestoning.py
+This script sets up the directory structure and necessary files for running SEEKR2 milestoning simulations. It ensures that all required files, including force field and system parameter files, are correctly formatted and placed in the appropriate locations. It processes the model.xml file and prepares SEEKR2-compatible input directories.
+
+#### 5. run_initial_simulation.py
+This script performs initial enhanced sampling using HIDR from SEEKRTools. It generates a set of starting structures at different milestones to initiate simulations. The initial sampling (Steered MD, RAMD, or metadynamics) helps populate all accessible regions of the system so that milestoning simulations can begin with well-distributed conformations.
+
+#### 6. run_milestoning.py
+This script runs the milestoning simulations. It executes multiple MD simulations for different milestones defined in model.xml. These simulations track the transitions between milestones, which are later used for computing kinetics and free energy differences.
+
+#### 7. run_analysis.py
+This script performs the final analysis of the milestoning simulation results. It calculates the transition rates between milestones, determines kinetic and thermodynamic properties, and generates the final results in analyze.out. The computed values help in understanding ligand-binding kinetics and other biophysical properties.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```
 ##### f. Compile the software
 ```sh
