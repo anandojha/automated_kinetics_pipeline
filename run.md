@@ -3,8 +3,9 @@
 ```sh
 conda activate one_step_kinetics
 ```
-
-
+```sh
+export OE_LICENSE="/home/USERNAME/licenses/oe_license.txt"
+```
 
 
 
