@@ -1,4 +1,4 @@
-## Automated simulation pipeline for kinetic and thermodynamic predictions
+## Automated milestoning pipeline for kinetic and thermodynamic predictions
 
 This repository provides an **end-to-end automated pipeline** for running **milestoning simulations** with machine-learned force fields to accelerate **drug-target kinetic and thermodynamic predictions**. The pipeline utilizes **SEEKR2**, **SEEKRTools**, and **espaloma=0.3.2** to automate simulations.
 
