@@ -43,7 +43,7 @@ python create_milestoning_input.py
 This script sets up the directory structure and necessary files for running SEEKR2 milestoning simulations. It ensures that all required files, including force field and system parameter files, are correctly formatted and placed in the appropriate locations. It processes the model.xml file and prepares SEEKR2-compatible input directories.
 
 ```sh
-python prepare_milestoning.py 
+python prepare_milestoning.py --seekr2_path "/mnt/home/USERNAME/seekr2"
 ```
 
 #### 5. run_initial_simulation.py
@@ -57,12 +57,12 @@ python run_initial_simulation.py --seekrtools_path "/mnt/home/USERNAME/seekrtool
 This script runs the milestoning simulations. It executes multiple MD simulations for different milestones defined in model.xml. These simulations track the transitions between milestones, which are later used for computing kinetics and free energy differences.
 
 ```sh
-python run_milestoning.py --seekr2_path "/mnt/home/aojha/seekr2"
+python run_milestoning.py --seekr2_path "/mnt/home/USERNAME/seekr2"
 ```
 
 #### 7. run_analysis.py
 This script performs the final analysis of the milestoning simulation results. It calculates the transition rates between milestones, determines kinetic and thermodynamic properties, and generates the final results in analyze.out. The computed values help in understanding ligand-binding kinetics and other biophysical properties.
 
 ```sh
-python run_analysis.py --seekr2_path "/mnt/home/aojha/seekr2"
+python run_analysis.py --seekr2_path "/mnt/home/USERNAME/seekr2"
 ```
