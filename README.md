@@ -195,3 +195,38 @@ cd ~
 ```sh
 rm -rf browndye2.tar.gz
 ```
+
+## Instructions for setting up and running the automated milestoning pipeline
+
+Please follow the step-by-step instructions on how to clone, navigate, and set up the milestoning simulation pipeline for kinetic and thermodynamic predictions.
+
+#### 1. First, clone the repository from GitHub
+
+```sh
+git clone https://github.com/anandojha/automated_milestoning_pipeline.git
+```
+
+#### 2. Once the repository is cloned, change to the working directory to the project folder
+
+```sh
+cd automated_milestoning_pipeline
+```
+
+#### 3. Navigate to the trypsin-benzamidine folder
+
+```sh
+cd trypsin_benzamidine
+```
+
+#### 4. Activate the conda environment
+
+```sh
+conda activate one_step_kinetics
+```
+
+#### 5. Export the openEye license
+
+Replace "USERNAME" with the actual home directory name and make sure the oe_license.txt file is stored in the specified location.
+```sh
+export OE_LICENSE="/home/USERNAME/licenses/oe_license.txt"
+```
