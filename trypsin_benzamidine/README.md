@@ -28,6 +28,7 @@ conda activate one_step_kinetics
 
 #### 5. Export the openEye license
 
+Replace "USERNAME" with the actual home directory name and make sure the oe_license.txt file is stored in the specified location.
 ```sh
 export OE_LICENSE="/home/USERNAME/licenses/oe_license.txt"
 ```
