@@ -32,28 +32,28 @@ python create_milestoning_input.py
 This script sets up the directory structure and necessary files for running SEEKR2 milestoning simulations. It ensures that all required files, including force field and system parameter files, are correctly formatted and placed in the appropriate locations. It processes the model.xml file and prepares SEEKR2-compatible input directories.
 
 ```sh
-python prepare_milestoning.py --seekr2_path "/mnt/home/USERNAME/seekr2"
+python prepare_milestoning.py --seekr2_path "/home/USERNAME/seekr2"
 ```
 
 #### 5. run_initial_simulation.py
 This script performs initial enhanced sampling using HIDR from SEEKRTools. It generates a set of starting structures at different milestones to initiate simulations. The initial sampling (Steered MD, RAMD, or metadynamics) helps populate all accessible regions of the system so that milestoning simulations can begin with well-distributed conformations.
 
 ```sh
-python run_initial_simulation.py --seekrtools_path "/mnt/home/USERNAME/seekrtools"
+python run_initial_simulation.py --seekrtools_path "/home/USERNAME/seekrtools"
 ```
 
 #### 6. run_milestoning.py
 This script runs the milestoning simulations. It executes multiple MD simulations for different milestones defined in model.xml. These simulations track the transitions between milestones, which are later used for computing kinetics and free energy differences.
 
 ```sh
-python run_milestoning.py --seekr2_path "/mnt/home/USERNAME/seekr2"
+python run_milestoning.py --seekr2_path "/home/USERNAME/seekr2"
 ```
 
 #### 7. run_analysis.py
 This script performs the final analysis of the milestoning simulation results. It calculates the transition rates between milestones, determines kinetic and thermodynamic properties, and generates the final results in analyze.out. The computed values help in understanding ligand-binding kinetics and other biophysical properties.
 
 ```sh
-python run_analysis.py --seekr2_path "/mnt/home/USERNAME/seekr2"
+python run_analysis.py --seekr2_path "/home/USERNAME/seekr2"
 ```
 
 Here is the summary of all the scripts to run in sequence:
@@ -62,8 +62,8 @@ Here is the summary of all the scripts to run in sequence:
 python get_protein_ligand.py 
 python parameterize.py 
 python create_milestoning_input.py 
-python prepare_milestoning.py --seekr2_path "/mnt/home/USERNAME/seekr2"
-python run_initial_simulation.py --seekrtools_path "/mnt/home/USERNAME/seekrtools"
-python run_milestoning.py --seekr2_path "/mnt/home/USERNAME/seekr2"
-python run_analysis.py --seekr2_path "/mnt/home/USERNAME/seekr2"
+python prepare_milestoning.py --seekr2_path "/home/USERNAME/seekr2"
+python run_initial_simulation.py --seekrtools_path "/home/USERNAME/seekrtools"
+python run_milestoning.py --seekr2_path "/home/USERNAME/seekr2"
+python run_analysis.py --seekr2_path "/home/USERNAME/seekr2"
 ```
