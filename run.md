@@ -31,32 +31,42 @@ This script performs the final analysis of the milestoning simulation results. I
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-```
-##### f. Compile the software
 ```sh
-make -j 4 all
+conda activate one_step_kinetics
 ```
 
-##### g. Return to the home directory 
 ```sh
-cd ~
+python get_protein_ligand.py 
 ```
 
-##### g. Clean up unnecessary files
 ```sh
-rm -rf browndye2.tar.gz
+python parameterize.py 
+```
+
+```sh
+python create_milestoning_input.py 
+
+```
+
+```sh
+python prepare_milestoning.py 
+
+```sh
+xxxx
+```
+
+```sh
+xxxx
+```
+
+```sh
+python run_initial_simulation.py 
+```
+
+```sh
+python run_milestoning.py 
+```
+
+```sh
+python run_analysis.py 
 ```
