@@ -55,3 +55,15 @@ This script performs the final analysis of the milestoning simulation results. I
 ```sh
 python run_analysis.py --seekr2_path "/mnt/home/USERNAME/seekr2"
 ```
+
+Here is the summary of all the scripts to run in sequence:
+
+```sh
+python get_protein_ligand.py --protein_ligand_file protein_ligand.pdb --ligand_resname BEN
+python parameterize.py --protein_file protein.pdb --ligand_file ligand.sdf
+python create_milestoning_input.py --input_pdb minimized.pdb
+python prepare_milestoning.py --xml_file SEEKR_SIMULATION/model.xml
+python run_initial_simulation.py --input_XML_file SEEKR_SIMULATION/model.xml --pdb_file receptor_ligand.pdb --pulling_scheme SMD --pulling_velocity 0.5
+python run_milestoning.py --input_XML_file SEEKR_SIMULATION/model.xml
+python run_analysis.py --xml_file SEEKR_SIMULATION/model.xml --output_file SEEKR_SIMULATION/analyze.out
+```
