@@ -158,15 +158,15 @@
 	  	  	  	  <pdb_coordinates_filename type="str">hidr_smd_at_0.200.pdb</pdb_coordinates_filename>
 	  	  	  	  <system_filename type="str">receptor_ligand.xml</system_filename>
 	  	  	  	  <box_vectors type="instance" class_name="Box_vectors" module="seekr2.modules.common_base">
-	  	  	  	  	  <ax type="float">6.4104137322232955</ax>
+	  	  	  	  	  <ax type="float">6.406547936060476</ax>
 	  	  	  	  	  <ay type="float">0.0</ay>
 	  	  	  	  	  <az type="float">0.0</az>
 	  	  	  	  	  <bx type="float">0.0</bx>
-	  	  	  	  	  <by type="float">6.4104137322232955</by>
+	  	  	  	  	  <by type="float">6.406547936060476</by>
 	  	  	  	  	  <bz type="float">0.0</bz>
 	  	  	  	  	  <cx type="float">0.0</cx>
 	  	  	  	  	  <cy type="float">0.0</cy>
-	  	  	  	  	  <cz type="float">6.4104137322232955</cz>
+	  	  	  	  	  <cz type="float">6.406547936060476</cz>
 	  	  	  	  </box_vectors>
 	  	  	  </forcefield_params>
 	  	  	  <production_directory type="str">prod</production_directory>
@@ -215,15 +215,15 @@
 	  	  	  	  <pdb_coordinates_filename type="str">hidr_smd_at_0.300.pdb</pdb_coordinates_filename>
 	  	  	  	  <system_filename type="str">receptor_ligand.xml</system_filename>
 	  	  	  	  <box_vectors type="instance" class_name="Box_vectors" module="seekr2.modules.common_base">
-	  	  	  	  	  <ax type="float">6.417573284438513</ax>
+	  	  	  	  	  <ax type="float">6.4123417708490225</ax>
 	  	  	  	  	  <ay type="float">0.0</ay>
 	  	  	  	  	  <az type="float">0.0</az>
 	  	  	  	  	  <bx type="float">0.0</bx>
-	  	  	  	  	  <by type="float">6.417573284438513</by>
+	  	  	  	  	  <by type="float">6.4123417708490225</by>
 	  	  	  	  	  <bz type="float">0.0</bz>
 	  	  	  	  	  <cx type="float">0.0</cx>
 	  	  	  	  	  <cy type="float">0.0</cy>
-	  	  	  	  	  <cz type="float">6.417573284438513</cz>
+	  	  	  	  	  <cz type="float">6.4123417708490225</cz>
 	  	  	  	  </box_vectors>
 	  	  	  </forcefield_params>
 	  	  	  <production_directory type="str">prod</production_directory>
@@ -272,15 +272,15 @@
 	  	  	  	  <pdb_coordinates_filename type="str">hidr_smd_at_0.400.pdb</pdb_coordinates_filename>
 	  	  	  	  <system_filename type="str">receptor_ligand.xml</system_filename>
 	  	  	  	  <box_vectors type="instance" class_name="Box_vectors" module="seekr2.modules.common_base">
-	  	  	  	  	  <ax type="float">6.409438930949747</ax>
+	  	  	  	  	  <ax type="float">6.413329605081687</ax>
 	  	  	  	  	  <ay type="float">0.0</ay>
 	  	  	  	  	  <az type="float">0.0</az>
 	  	  	  	  	  <bx type="float">0.0</bx>
-	  	  	  	  	  <by type="float">6.409438930949747</by>
+	  	  	  	  	  <by type="float">6.413329605081687</by>
 	  	  	  	  	  <bz type="float">0.0</bz>
 	  	  	  	  	  <cx type="float">0.0</cx>
 	  	  	  	  	  <cy type="float">0.0</cy>
-	  	  	  	  	  <cz type="float">6.409438930949747</cz>
+	  	  	  	  	  <cz type="float">6.413329605081687</cz>
 	  	  	  	  </box_vectors>
 	  	  	  </forcefield_params>
 	  	  	  <production_directory type="str">prod</production_directory>
@@ -329,15 +329,15 @@
 	  	  	  	  <pdb_coordinates_filename type="str">hidr_smd_at_0.500.pdb</pdb_coordinates_filename>
 	  	  	  	  <system_filename type="str">receptor_ligand.xml</system_filename>
 	  	  	  	  <box_vectors type="instance" class_name="Box_vectors" module="seekr2.modules.common_base">
-	  	  	  	  	  <ax type="float">6.411151282833914</ax>
+	  	  	  	  	  <ax type="float">6.410687881435461</ax>
 	  	  	  	  	  <ay type="float">0.0</ay>
 	  	  	  	  	  <az type="float">0.0</az>
 	  	  	  	  	  <bx type="float">0.0</bx>
-	  	  	  	  	  <by type="float">6.411151282833914</by>
+	  	  	  	  	  <by type="float">6.410687881435461</by>
 	  	  	  	  	  <bz type="float">0.0</bz>
 	  	  	  	  	  <cx type="float">0.0</cx>
 	  	  	  	  	  <cy type="float">0.0</cy>
-	  	  	  	  	  <cz type="float">6.411151282833914</cz>
+	  	  	  	  	  <cz type="float">6.410687881435461</cz>
 	  	  	  	  </box_vectors>
 	  	  	  </forcefield_params>
 	  	  	  <production_directory type="str">prod</production_directory>
@@ -386,15 +386,15 @@
 	  	  	  	  <pdb_coordinates_filename type="str">hidr_smd_at_0.600.pdb</pdb_coordinates_filename>
 	  	  	  	  <system_filename type="str">receptor_ligand.xml</system_filename>
 	  	  	  	  <box_vectors type="instance" class_name="Box_vectors" module="seekr2.modules.common_base">
-	  	  	  	  	  <ax type="float">6.4129273472491235</ax>
+	  	  	  	  	  <ax type="float">6.412240017848326</ax>
 	  	  	  	  	  <ay type="float">0.0</ay>
 	  	  	  	  	  <az type="float">0.0</az>
 	  	  	  	  	  <bx type="float">0.0</bx>
-	  	  	  	  	  <by type="float">6.4129273472491235</by>
+	  	  	  	  	  <by type="float">6.412240017848326</by>
 	  	  	  	  	  <bz type="float">0.0</bz>
 	  	  	  	  	  <cx type="float">0.0</cx>
 	  	  	  	  	  <cy type="float">0.0</cy>
-	  	  	  	  	  <cz type="float">6.4129273472491235</cz>
+	  	  	  	  	  <cz type="float">6.412240017848326</cz>
 	  	  	  	  </box_vectors>
 	  	  	  </forcefield_params>
 	  	  	  <production_directory type="str">prod</production_directory>
@@ -443,15 +443,15 @@
 	  	  	  	  <pdb_coordinates_filename type="str">hidr_smd_at_0.700.pdb</pdb_coordinates_filename>
 	  	  	  	  <system_filename type="str">receptor_ligand.xml</system_filename>
 	  	  	  	  <box_vectors type="instance" class_name="Box_vectors" module="seekr2.modules.common_base">
-	  	  	  	  	  <ax type="float">6.401848606155255</ax>
+	  	  	  	  	  <ax type="float">6.410940242133708</ax>
 	  	  	  	  	  <ay type="float">0.0</ay>
 	  	  	  	  	  <az type="float">0.0</az>
 	  	  	  	  	  <bx type="float">0.0</bx>
-	  	  	  	  	  <by type="float">6.401848606155255</by>
+	  	  	  	  	  <by type="float">6.410940242133708</by>
 	  	  	  	  	  <bz type="float">0.0</bz>
 	  	  	  	  	  <cx type="float">0.0</cx>
 	  	  	  	  	  <cy type="float">0.0</cy>
-	  	  	  	  	  <cz type="float">6.401848606155255</cz>
+	  	  	  	  	  <cz type="float">6.410940242133708</cz>
 	  	  	  	  </box_vectors>
 	  	  	  </forcefield_params>
 	  	  	  <production_directory type="str">prod</production_directory>
@@ -500,15 +500,15 @@
 	  	  	  	  <pdb_coordinates_filename type="str">hidr_smd_at_0.800.pdb</pdb_coordinates_filename>
 	  	  	  	  <system_filename type="str">receptor_ligand.xml</system_filename>
 	  	  	  	  <box_vectors type="instance" class_name="Box_vectors" module="seekr2.modules.common_base">
-	  	  	  	  	  <ax type="float">6.421463288072785</ax>
+	  	  	  	  	  <ax type="float">6.415702362983559</ax>
 	  	  	  	  	  <ay type="float">0.0</ay>
 	  	  	  	  	  <az type="float">0.0</az>
 	  	  	  	  	  <bx type="float">0.0</bx>
-	  	  	  	  	  <by type="float">6.421463288072785</by>
+	  	  	  	  	  <by type="float">6.415702362983559</by>
 	  	  	  	  	  <bz type="float">0.0</bz>
 	  	  	  	  	  <cx type="float">0.0</cx>
 	  	  	  	  	  <cy type="float">0.0</cy>
-	  	  	  	  	  <cz type="float">6.421463288072785</cz>
+	  	  	  	  	  <cz type="float">6.415702362983559</cz>
 	  	  	  	  </box_vectors>
 	  	  	  </forcefield_params>
 	  	  	  <production_directory type="str">prod</production_directory>
@@ -557,15 +557,15 @@
 	  	  	  	  <pdb_coordinates_filename type="str">hidr_smd_at_0.900.pdb</pdb_coordinates_filename>
 	  	  	  	  <system_filename type="str">receptor_ligand.xml</system_filename>
 	  	  	  	  <box_vectors type="instance" class_name="Box_vectors" module="seekr2.modules.common_base">
-	  	  	  	  	  <ax type="float">6.415991846829599</ax>
+	  	  	  	  	  <ax type="float">6.4234766691237315</ax>
 	  	  	  	  	  <ay type="float">0.0</ay>
 	  	  	  	  	  <az type="float">0.0</az>
 	  	  	  	  	  <bx type="float">0.0</bx>
-	  	  	  	  	  <by type="float">6.415991846829599</by>
+	  	  	  	  	  <by type="float">6.4234766691237315</by>
 	  	  	  	  	  <bz type="float">0.0</bz>
 	  	  	  	  	  <cx type="float">0.0</cx>
 	  	  	  	  	  <cy type="float">0.0</cy>
-	  	  	  	  	  <cz type="float">6.415991846829599</cz>
+	  	  	  	  	  <cz type="float">6.4234766691237315</cz>
 	  	  	  	  </box_vectors>
 	  	  	  </forcefield_params>
 	  	  	  <production_directory type="str">prod</production_directory>
@@ -614,15 +614,15 @@
 	  	  	  	  <pdb_coordinates_filename type="str">hidr_smd_at_1.000.pdb</pdb_coordinates_filename>
 	  	  	  	  <system_filename type="str">receptor_ligand.xml</system_filename>
 	  	  	  	  <box_vectors type="instance" class_name="Box_vectors" module="seekr2.modules.common_base">
-	  	  	  	  	  <ax type="float">6.410255351500861</ax>
+	  	  	  	  	  <ax type="float">6.420019212126617</ax>
 	  	  	  	  	  <ay type="float">0.0</ay>
 	  	  	  	  	  <az type="float">0.0</az>
 	  	  	  	  	  <bx type="float">0.0</bx>
-	  	  	  	  	  <by type="float">6.410255351500861</by>
+	  	  	  	  	  <by type="float">6.420019212126617</by>
 	  	  	  	  	  <bz type="float">0.0</bz>
 	  	  	  	  	  <cx type="float">0.0</cx>
 	  	  	  	  	  <cy type="float">0.0</cy>
-	  	  	  	  	  <cz type="float">6.410255351500861</cz>
+	  	  	  	  	  <cz type="float">6.420019212126617</cz>
 	  	  	  	  </box_vectors>
 	  	  	  </forcefield_params>
 	  	  	  <production_directory type="str">prod</production_directory>
@@ -671,15 +671,15 @@
 	  	  	  	  <pdb_coordinates_filename type="str">hidr_smd_at_1.100.pdb</pdb_coordinates_filename>
 	  	  	  	  <system_filename type="str">receptor_ligand.xml</system_filename>
 	  	  	  	  <box_vectors type="instance" class_name="Box_vectors" module="seekr2.modules.common_base">
-	  	  	  	  	  <ax type="float">6.408804233671058</ax>
+	  	  	  	  	  <ax type="float">6.4048799661406415</ax>
 	  	  	  	  	  <ay type="float">0.0</ay>
 	  	  	  	  	  <az type="float">0.0</az>
 	  	  	  	  	  <bx type="float">0.0</bx>
-	  	  	  	  	  <by type="float">6.408804233671058</by>
+	  	  	  	  	  <by type="float">6.4048799661406415</by>
 	  	  	  	  	  <bz type="float">0.0</bz>
 	  	  	  	  	  <cx type="float">0.0</cx>
 	  	  	  	  	  <cy type="float">0.0</cy>
-	  	  	  	  	  <cz type="float">6.408804233671058</cz>
+	  	  	  	  	  <cz type="float">6.4048799661406415</cz>
 	  	  	  	  </box_vectors>
 	  	  	  </forcefield_params>
 	  	  	  <production_directory type="str">prod</production_directory>
@@ -728,15 +728,15 @@
 	  	  	  	  <pdb_coordinates_filename type="str">hidr_smd_at_1.200.pdb</pdb_coordinates_filename>
 	  	  	  	  <system_filename type="str">receptor_ligand.xml</system_filename>
 	  	  	  	  <box_vectors type="instance" class_name="Box_vectors" module="seekr2.modules.common_base">
-	  	  	  	  	  <ax type="float">6.419108554789327</ax>
+	  	  	  	  	  <ax type="float">6.4141899346094045</ax>
 	  	  	  	  	  <ay type="float">0.0</ay>
 	  	  	  	  	  <az type="float">0.0</az>
 	  	  	  	  	  <bx type="float">0.0</bx>
-	  	  	  	  	  <by type="float">6.419108554789327</by>
+	  	  	  	  	  <by type="float">6.4141899346094045</by>
 	  	  	  	  	  <bz type="float">0.0</bz>
 	  	  	  	  	  <cx type="float">0.0</cx>
 	  	  	  	  	  <cy type="float">0.0</cy>
-	  	  	  	  	  <cz type="float">6.419108554789327</cz>
+	  	  	  	  	  <cz type="float">6.4141899346094045</cz>
 	  	  	  	  </box_vectors>
 	  	  	  </forcefield_params>
 	  	  	  <production_directory type="str">prod</production_directory>

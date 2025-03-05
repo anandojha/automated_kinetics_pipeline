@@ -1,8 +1,11 @@
 #!/bin/bash
 
+# Export the OpenEye license  
+export OE_LICENSE="/home/USERNAME/licenses/oe_license.txt"
+
 # Define SEEKR2 and SEEKRTools paths
-SEEKR2_PATH="/mnt/home/aojha/seekr2"
-SEEKRTOOLS_PATH="/mnt/home/aojha/seekrtools"
+SEEKR2_PATH="/home/USERNAME/seekr2"
+SEEKRTOOLS_PATH="/home/USERNAME/seekrtools"
 
 # Stop execution if any command fails
 set -e

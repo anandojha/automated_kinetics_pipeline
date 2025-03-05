@@ -1,4 +1,4 @@
-REMARK   1 CREATED WITH MDTraj 1.10.0, 2025-03-04
+REMARK   1 CREATED WITH MDTraj 1.10.3, 2025-03-05
 CRYST1   65.831   65.831   65.831  90.00  90.00  90.00 P 1           1 
 MODEL        0
 ATOM      1  N   XX0 A   1      -6.782   2.266  23.320  1.00  0.00           N  

@@ -1,2 +1,7 @@
 All post-simulation checks passed.
-Insufficient statistics were found to create a path between end states "anchor_0" and "Bulk".
+Printing results from MMVT SEEKR calculation
+k_off (1/s): (2.8 ± 1.1) * 10^+03
+Mean first passage times (s):
+  MFPT from anchor_0 to bulk : (3.5 ± 4.8) * 10^-04
+Free energy differences (kcal/mol):
+All plots being saved to: /mnt/home/aojha/automated_milestoning_pipeline/trypsin_benzamidine_simulations/SEEKR_SIMULATION/images_and_plots/

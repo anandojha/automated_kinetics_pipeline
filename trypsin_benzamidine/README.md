@@ -70,9 +70,10 @@ python run_milestoning.py --seekr2_path "/home/USERNAME/seekr2"
 python run_analysis.py --seekr2_path "/home/USERNAME/seekr2"
 ```
 
-The run_all.sh script automates the execution of the milestoning pipeline by defining two key variables:
+The run_all.sh script automates the execution of the milestoning pipeline by defining three key variables:
  
 ```sh
+export OE_LICENSE="/home/USERNAME/licenses/oe_license.txt"
 SEEKR2_PATH="/home/USERNAME/seekr2"
 SEEKRTOOLS_PATH="/home/USERNAME/seekrtools"
 ```
