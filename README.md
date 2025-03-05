@@ -234,6 +234,12 @@ Once the above steps are successful, read the README.md file in the trypsin_benz
 
 There is a separate folder named trypsin_benzamidine_simulation, where these scripts are executed for comparison purposes. Note that these simulations are run for a very short time, meaning that the computed kinetic, thermodynamic, and rate constants may not accurately represent absolute experimental values. The purpose of this execution is to demonstrate the workflow and methodology, but actual simulations should be run for extended durations to obtain scientifically meaningful results. The users can compare results across different simulation times by increasing sampling duration and milestone transitions for better accuracy.
 
+Relevant GitHub Repositories:
+
+SEEKR2: https://github.com/seekrcentral/seekr2
+SEEKR2 OpenMM Plugin: https://github.com/seekrcentral/seekr2_openmm_plugin
+SEEKRTools: https://github.com/seekrcentral/seekrtools
+QMrebind: https://github.com/seekrcentral/qmrebind
 
 Relevant milestoning papers: 
   - Votapka, L. W.; Stokely, A. M.; Ojha, A. A.; Amaro, R. E. SEEKR2: Versatile Multiscale Milestoning Utilizing the OpenMM Molecular Dynamics Engine. J. Chem. Inf. Mod. 2022 62 (13), 3253-3262. DOI: 10.1021/acs.jcim.2c00501
@@ -243,4 +249,11 @@ Relevant milestoning papers:
   - Jagger, B. R.; Ojha, A. A.; Amaro, R. E. Predicting Ligand Binding Kinetics Using a Markovian Milestoning with Voronoi Tessellations Multiscale Approach. J. Chem. Theory Comput. 2020. https://doi.org/10.1021/acs.jctc.0c00495.
   - Jagger, B. R.; Lee, C. T.; Amaro, R. E. Quantitative Ranking of Ligand Binding Kinetics with a Multiscale Milestoning Simulation Approach. J. Phys. Chem. Lett. 2018, 9 (17), 4941–4948. https://doi.org/10.1021/acs.jpclett.8b02047.
   - Votapka LW, Amaro RE (2015) Multiscale Estimation of Binding Kinetics Using Brownian Dynamics, Molecular Dynamics and Milestoning. PLOS Computational Biology 11(10): e1004381. https://doi.org/10.1371/journal.pcbi.1004381
+
+The following people have contributed directly to the coding and validation efforts of automated milestoning pipeline for kinetic and thermodynamic predictions  (listed in alphabetical order of first name). The authors would like to thank everyone who has helped or will help improve this project by providing feedback, bug reports, or other comments.
+
+Anupam A. Ojha, Flatiron Institute 
+Lane W. Votapka, UC San Diego 
+Rommie E. Amaro, UC San Diego 
+Sonya M. Hanson, Flatiron Institute 
 
