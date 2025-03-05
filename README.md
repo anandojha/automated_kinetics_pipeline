@@ -236,25 +236,23 @@ There is a separate folder named trypsin_benzamidine_simulation, where these scr
 
 
 ### Relevant GitHub repositories
-
 1. SEEKR2: https://github.com/seekrcentral/seekr2
 2. SEEKR2 OpenMM Plugin: https://github.com/seekrcentral/seekr2_openmm_plugin
 3. SEEKRTools: https://github.com/seekrcentral/seekrtools
 4. QMrebind: https://github.com/seekrcentral/qmrebind
 
 ### Relevant milestoning papers
-1. Votapka, L. W.; Stokely, A. M.; Ojha, A. A.; Amaro, R. E. SEEKR2: Versatile Multiscale Milestoning Utilizing the OpenMM Molecular Dynamics Engine. J. Chem. Inf. Mod. 2022 62 (13), 3253-3262. DOI: 10.1021/acs.jcim.2c00501
-2. Ojha, A. A., Votapka L. W., Amaro, R. E. QMrebind: incorporating quantum mechanical force field reparameterization at the ligand binding site for improved drug-target kinetics through milestoning simulations. Chemical Science 14 (45), 13159-13175
-3. Ojha A. A., Srivastava A., Votapka L. W., and Amaro R. E. Selectivity and Ranking of Tight-Binding JAK-STAT Inhibitors Using Markovian Milestoning with Voronoi Tessellations. Journal of Chemical Information and Modeling 2023 63 (8), 2469-2482. DOI: 10.1021/acs.jcim.2c01589
-4. Votapka, L. W.; Jagger, B. R.; Heyneman, A. L.; Amaro, R. E. SEEKR: Simulation Enabled Estimation of Kinetic Rates, A Computational Tool to Estimate Molecular Kinetics and Its Application to Trypsin–Benzamidine Binding. J. Phys. Chem. B 2017, 121 (15), 3597–3606. https://doi.org/10.1021/acs.jpcb.6b09388.
-5. Jagger, B. R.; Ojha, A. A.; Amaro, R. E. Predicting Ligand Binding Kinetics Using a Markovian Milestoning with Voronoi Tessellations Multiscale Approach. J. Chem. Theory Comput. 2020. https://doi.org/10.1021/acs.jctc.0c00495.
-6. Jagger, B. R.; Lee, C. T.; Amaro, R. E. Quantitative Ranking of Ligand Binding Kinetics with a Multiscale Milestoning Simulation Approach. J. Phys. Chem. Lett. 2018, 9 (17), 4941–4948. https://doi.org/10.1021/acs.jpclett.8b02047.
-7. Votapka LW, Amaro RE (2015) Multiscale Estimation of Binding Kinetics Using Brownian Dynamics, Molecular Dynamics and Milestoning. PLOS Computational Biology 11(10): e1004381. https://doi.org/10.1371/journal.pcbi.1004381
+1. Ojha, Anupam Anand, Lane William Votapka, Gary Alexander Huber, Shang Gao, and Rommie Elizabeth Amaro. "An introductory tutorial to the SEEKR2 (Simulation enabled estimation of kinetic rates v. 2) multiscale milestoning software [Article v1. 0]." Living Journal of Computational Molecular Science 5, no. 1 (2023): 2359-2359.
+2. Votapka, Lane W., Andrew M. Stokely, Anupam A. Ojha, and Rommie E. Amaro. "SEEKR2: Versatile multiscale milestoning utilizing the OpenMM molecular dynamics engine." Journal of chemical information and modeling 62, no. 13 (2022): 3253-3262.
+3. Ojha, Anupam Anand, Lane William Votapka, and Rommie Elizabeth Amaro. "QMrebind: incorporating quantum mechanical force field reparameterization at the ligand binding site for improved drug-target kinetics through milestoning simulations." Chemical Science 14, no. 45 (2023): 13159-13175.
+4. Ojha, Anupam Anand, Ambuj Srivastava, Lane William Votapka, and Rommie E. Amaro. "Selectivity and ranking of tight-binding JAK-STAT inhibitors using Markovian milestoning with Voronoi tessellations." Journal of chemical information and modeling 63, no. 8 (2023): 2469-2482.
+5. Votapka, Lane W., Benjamin R. Jagger, Alexandra L. Heyneman, and Rommie E. Amaro. "SEEKR: simulation enabled estimation of kinetic rates, a computational tool to estimate molecular kinetics and its application to trypsin–benzamidine binding." The Journal of Physical Chemistry B 121, no. 15 (2017): 3597-3606.
+6. Jagger, Benjamin R., Anupam A. Ojha, and Rommie E. Amaro. "Predicting ligand binding kinetics using a Markovian milestoning with voronoi tessellations multiscale approach." Journal of Chemical Theory and Computation 16, no. 8 (2020): 5348-5357.
+7. Jagger, Benjamin R., Christopher T. Lee, and Rommie E. Amaro. "Quantitative ranking of ligand binding kinetics with a multiscale milestoning simulation approach." The journal of physical chemistry letters 9, no. 17 (2018): 4941-4948.
+8. Votapka, Lane W., and Rommie E. Amaro. "Multiscale estimation of binding kinetics using Brownian dynamics, molecular dynamics and milestoning." PLoS computational biology 11, no. 10 (2015): e1004381.
 
 ### Authors and contributors 
-
 The following people have contributed directly to the coding and validation efforts of automated milestoning pipeline for kinetic and thermodynamic predictions  (listed in alphabetical order of first name). The authors would like to thank everyone who has helped or will help improve this project by providing feedback, bug reports, or other comments.
-
 1. Anupam A. Ojha, Flatiron Institute 
 2. Lane W. Votapka, UC San Diego 
 3. Rommie E. Amaro, UC San Diego 
