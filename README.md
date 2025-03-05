@@ -224,7 +224,7 @@ cd trypsin_benzamidine
 conda activate one_step_kinetics
 ```
 
-#### 5. Export the openEye license
+#### 5. Export the OpenEye license
 
 Replace "USERNAME" with the actual home directory name and make sure the oe_license.txt file is stored in the specified location.
 ```sh
